@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ resultado }}</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      margin: 10px auto;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 3rem;
+    }
+
+    button {
+      font-size: 3rem;
+      color: white;
+      background-color: red;
+      padding: 2rem;
+      border-radius: 11px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>
+        {{ "¡¡ Ganaste :^) !!" if resultado == "Ganador" else "¡¡ Perdiste :^(
+        !!" }}
+      </h1>
+      <a href="/nuevo_juego">
+        <button>Volver a jugar</button>
+      </a>
+    </div>
+  </body>
+</html>
