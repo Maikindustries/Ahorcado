@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Búsqueda</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-direction: column;
+    }
+
+    label {
+      display: block;
+      font-size: 4rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    input {
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 11px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Ingresa los siguientes datos</h1>
+      <form action="/busqueda" method="post" class="container">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre..." />
+        <label for="nombre"
+          ><input type="checkbox" name="checkbox" id="checkbox" />Estoy
+          aburrido</label
+        >
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
